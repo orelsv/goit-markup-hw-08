@@ -68,12 +68,12 @@ p {
   position: relative;
 }
 
-.header-f {
+.header__header-f {
   display: flex;
   align-items: center;
 }
 
-.logo {
+.header__logo {
   text-decoration: none;
   font-family: "Raleway";
   font-style: normal;
@@ -84,7 +84,7 @@ p {
   color: var(--black);
 }
 
-.logo-web {
+.header__logo-web {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -94,18 +94,18 @@ p {
   color: var(--blue);
 }
 
-.nav {
+.nav-ul__nav {
   display: flex;
   margin-left: 68px;
 }
 
-.nav-li {
+.nav-ul__nav-li {
   margin-left: 25px;
   margin-right: 25px;
   position: relative;
 }
 
-.nav-item {
+.nav-ul__nav-item {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -115,9 +115,7 @@ p {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
 }
-
-.nav-item:hover,
-.nav-item:focus {
+.nav-ul__nav-item:hover, .nav-ul__nav-item:focus {
   color: var(--blue);
 }
 
@@ -136,7 +134,7 @@ p {
   bottom: -32px;
 }
 
-.header-email {
+.header__header-email {
   display: block;
   display: flex;
   margin-right: 50px;
@@ -149,8 +147,11 @@ p {
   color: var(--grey);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.header__header-email:hover, .header__header-email:focus {
+  color: #2196f3;
+}
 
-.header-tel {
+.header__header-tel {
   display: block;
   display: flex;
   margin-left: 10px;
@@ -162,49 +163,38 @@ p {
   color: var(--grey);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.header__header-tel:hover, .header__header-tel:focus {
+  color: #2196f3;
+}
 
-.header-cont-div {
+.header__header-cont-div {
   display: block;
   display: flex;
   justify-content: center;
 }
 
-.soc-svg-header {
+.header__soc-svg-header {
   margin-right: 10px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.header-email:hover .header__soc-svg-header {
+  fill: #2196f3;
+}
+.header-email:focus .header__soc-svg-header {
+  fill: #2196f3;
+}
+.header-tel:hover .header__soc-svg-header {
+  fill: #2196f3;
+}
+.header-tel:focus .header__soc-svg-header {
+  fill: #2196f3;
+}
 
-.contct-fill {
+.header__contct-fill {
   display: flex;
   justify-content: center;
   fill: #afb1b8;
   justify-items: baseline;
-}
-
-.header-email:hover,
-.header-email:focus {
-  color: #2196f3;
-}
-
-.header-email:hover .soc-svg-header {
-  fill: #2196f3;
-}
-
-.header-email:focus .soc-svg-header {
-  fill: #2196f3;
-}
-
-.header-tel:hover,
-.header-tel:focus {
-  color: #2196f3;
-}
-
-.header-tel:hover .soc-svg-header {
-  fill: #2196f3;
-}
-
-.header-tel:focus .soc-svg-header {
-  fill: #2196f3;
 }
 
 .hero {
@@ -214,7 +204,7 @@ p {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.hero-h1 {
+.hero__hero-h1 {
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -225,7 +215,7 @@ p {
   color: var(--white);
 }
 
-.hero-btn {
+.hero__hero-btn {
   border-radius: 4px;
   padding-left: 32px;
   padding-right: 32px;
@@ -252,16 +242,16 @@ p {
   padding-bottom: 94px;
 }
 
-.about-list {
+.about__about-list {
   display: flex;
   gap: 30px;
 }
 
-.about-list-li {
+.about__about-list-li {
   width: 270px;
 }
 
-.about-list-h {
+.about__about-list-h {
   margin-top: 30px;
   margin-bottom: 10px;
   font-size: 14px;
@@ -271,14 +261,14 @@ p {
   color: var(--dark-grey);
 }
 
-.about-p {
+.about__about-p {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--grey);
 }
 
-.about-grey {
+.about__about-grey {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -288,7 +278,7 @@ p {
   border-radius: 4px;
 }
 
-.about-icon {
+.about__about-icon {
   background-color: #f5f4fa;
 }
 
@@ -403,21 +393,17 @@ p {
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.soc-team-link:hover, .soc-team-link:focus {
+  background-color: #2196f3;
+}
 
 .soc-svg {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.soc-team-link:hover,
-.soc-team-link:focus {
-  background-color: #2196f3;
-}
-
 .soc-team-link:hover .soc-svg {
   fill: #ffffff;
 }
-
 .soc-team-link:focus .soc-svg {
   fill: #ffffff;
 }
@@ -453,21 +439,17 @@ p {
   height: 92px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.clients-link:hover, .clients-link:focus {
+  border: 1px solid #2196f3;
+}
 
 .clients-svg {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.clients-link:hover,
-.clients-link:focus {
-  border: 1px solid #2196f3;
-}
-
 .clients-link:hover .clients-svg {
   fill: #2196f3;
 }
-
 .clients-link:focus .clients-svg {
   fill: #2196f3;
 }
@@ -510,9 +492,7 @@ p {
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-maps:hover,
-.footer-maps:focus {
+.footer-maps:hover, .footer-maps:focus {
   color: var(--blue);
 }
 
@@ -526,9 +506,7 @@ p {
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-email:hover,
-.footer-email:focus {
+.footer-email:hover, .footer-email:focus {
   color: var(--blue);
 }
 
@@ -541,9 +519,7 @@ p {
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-tel:hover,
-.footer-tel:focus {
+.footer-tel:hover, .footer-tel:focus {
   color: var(--blue);
 }
 
@@ -590,14 +566,12 @@ p {
   opacity: 90%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.attach-link:hover, .attach-link:focus {
+  background-color: #2196f3;
+}
 
 .attach-svg {
   fill: #ffffff;
-}
-
-.attach-link:hover,
-.attach-link:focus {
-  background-color: #2196f3;
 }
 
 .subscribe {
@@ -642,9 +616,7 @@ p {
   display: flex;
   justify-content: center;
 }
-
-.subscribe-button:hover,
-.subscribe-button:focus {
+.subscribe-button:hover, .subscribe-button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -705,9 +677,7 @@ p {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.filter-btn:hover,
-.filter-btn:focus {
+.filter-btn:hover, .filter-btn:focus {
   background-color: var(--blue);
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -744,21 +714,18 @@ p {
   transform: translateY(100%);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.port-shadow:hover .port-text-img {
+  transform: translateY(0);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .port-shadow {
   display: block;
   text-decoration: none;
   transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.port-shadow:hover,
-.port-shadow:focus {
+.port-shadow:hover, .port-shadow:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.port-shadow:hover .port-text-img {
-  transform: translateY(0);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .porfolio-item {
@@ -822,8 +789,7 @@ p {
   background-color: transparent;
 }
 
-.modal-fill:hover,
-.modal-fill:focus {
+.modal-fill:hover, .modal-fill:focus {
   fill: #2196f3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -855,7 +821,9 @@ p {
   outline: transparent;
   padding-left: 42px;
 }
-
+.modal-input:focus {
+  border-color: #2196f3;
+}
 .modal-input::-moz-placeholder {
   font-family: "Roboto";
   font-style: normal;
@@ -865,7 +833,6 @@ p {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .modal-input:-ms-input-placeholder {
   font-family: "Roboto";
   font-style: normal;
@@ -875,7 +842,6 @@ p {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .modal-input::placeholder {
   font-family: "Roboto";
   font-style: normal;
@@ -884,14 +850,6 @@ p {
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-}
-
-.modal-input:focus {
-  border-color: #2196f3;
-}
-
-.modal-input:focus + .modal-icon {
-  fill: #2196f3;
 }
 
 .input-wraper {
@@ -905,6 +863,9 @@ p {
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
+}
+.modal-input:focus + .modal-icon {
+  fill: #2196f3;
 }
 
 .modal-label {
@@ -930,7 +891,6 @@ p {
   padding-top: 12px;
   margin-bottom: 10px;
 }
-
 .modal-input-textarea:focus {
   border-color: #2196f3;
 }
@@ -959,9 +919,7 @@ p {
   cursor: pointer;
   margin-top: 30px;
 }
-
-.modal-button:hover,
-.modal-button:focus {
+.modal-button:hover, .modal-button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -991,7 +949,6 @@ p {
   justify-content: center;
   fill: transparent;
 }
-
 .checkbox:checked + .modal-chek-textt span {
   background-color: #2196f3;
   border: none;
