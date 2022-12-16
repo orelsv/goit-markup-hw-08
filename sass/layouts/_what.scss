@@ -1,0 +1,39 @@
+.what {
+    padding-bottom: 94px;
+  }
+  .what-h2 {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--dark-grey);
+  }
+  .what-ul {
+    display: flex;
+    margin-top: 50px;
+    gap: 30px;
+  }
+  .what-item {
+    position: relative;
+  }
+  .what-img {
+  }
+  .what-text {
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    bottom: 0;
+  }
