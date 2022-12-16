@@ -68,7 +68,12 @@ img {
 }
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 448px;
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
   }
 }
 
@@ -257,10 +262,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-}
-
-.about__about-list-li {
-  width: 450px;
+  width: 100%;
 }
 
 .about__about-list-h {
@@ -285,7 +287,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 450px;
+  width: 448px;
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
@@ -339,8 +341,8 @@ img {
 
 .team {
   background: var(--background-team);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .team-h2 {
@@ -354,6 +356,7 @@ img {
 
 .team-ul {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -422,14 +425,14 @@ img {
 }
 
 .clients-pad {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .clients-h2 {
   margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--dark-grey);
@@ -437,6 +440,7 @@ img {
 
 .clients-ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
 }
@@ -478,10 +482,14 @@ img {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--white);
+}
+
+.footer-pad {
+  text-align: center;
 }
 
 .footer-ul {
@@ -537,12 +545,11 @@ img {
 }
 
 .footer-flex {
-  display: flex;
+  align-items: center;
 }
 
 .attach {
-  margin-left: 70px;
-  padding-top: 10px;
+  padding-top: 51px;
 }
 
 .attach-p {
@@ -554,6 +561,7 @@ img {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .attach-ul {
@@ -588,12 +596,12 @@ img {
 }
 
 .subscribe {
-  margin-left: 93px;
-  padding-top: 10px;
+  /*margin-left: 93px;*/
+  padding-top: 60px;
 }
 
 .subscribe-input {
-  width: 358px;
+  width: 448px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -612,7 +620,7 @@ img {
   height: 50px;
   border-radius: 4px;
   margin-left: 12px;
-  margin-top: 45px;
+  margin-top: 20px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -631,6 +639,11 @@ img {
 }
 .subscribe-button:hover, .subscribe-button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.subscribe-button-center {
+  display: flex;
+  justify-content: center;
 }
 
 .subscribe-svg-close {

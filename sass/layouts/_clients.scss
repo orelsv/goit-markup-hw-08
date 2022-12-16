@@ -1,23 +1,27 @@
 .clients-pad {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .clients-h2 {
   margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--dark-grey);
 }
 .clients-ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+  width: 100%;
+ 
 }
 
 .clients-li {
+  
 }
 
 .clients-link {

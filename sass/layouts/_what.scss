@@ -1,5 +1,8 @@
 .what {
     padding-bottom: 94px;
+    @media screen and (max-width:1199px) {
+      display: none;
+    }
   }
   .what-h2 {
     font-size: 36px;
@@ -7,6 +10,7 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--dark-grey);
+    
   }
   .what-ul {
     display: flex;
