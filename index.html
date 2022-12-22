@@ -23,7 +23,7 @@
   </head>
   <body class="body">
 
-     <!--header
+     <!--header-->
     <header class="header">
       <div class="container">
         <div class="header-f header__header-f">
@@ -60,9 +60,60 @@
               </a>
             </div>
           </div>
+          <div class="menu-open-div">
+            <button type="button" class="menu-open" data-menu-open>
+             <svg class="menu-open-svg" width="40" height="40">
+               <use href="./images/icons.svg#icon-menu_mob"></use>
+             </svg>
+            </button>
+           </div>
+        </div>
+        
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+         <button type="button" class="menu-close" data-menu-close>
+          <svg class="menu-open-svg" width="40" height="40">
+            <use href="./images/icons.svg#icon-mob-menu-close"></use>
+          </svg>
+         </button>
+          <div class="mob-menu-top">
+           <ul class="menu-mob-ul">
+            <li class="menu-mob-li">
+              <div class="menu-mob-current">
+                <a href="./index.html" class="menu-mob-item">Студія</a>
+              </div>
+            </li>
+            <li class="menu-mob-li">
+              <a href="./portfolio.html" class="menu-mob-item">Портфоліо</a>
+            </li>
+            <li class="menu-mob-li"><a href="#" class="menu-mob-item">Контакти</a></li>
+           </ul>
+          </div>
+          <div class="mob-menu-bottom">
+           <div class="menu-mob-contact">
+            <a href="tel:+380961111111" class="menu-mob-tel"
+              >+38 096 111 11 11
+            </a>
+           </div>
+           <div class="menu-mob-contact">
+            <a href="mailto:info@devstudio.com" class="menu-mob-email"
+              >info@devstudio.com
+            </a>
+           </div>
+           <div class="menu-mob-soc">
+            <p>Instagram</p>
+            <p class="mob-palka">|</p>
+            <p>Twitter</p>
+            <p class="mob-palka">|</p>
+            <p>Facebook</p>
+            <p class="mob-palka">|</p>
+            <p>LinkedIn</p>
+           </div>
+          </div>
         </div>
       </div>
-    </header>-->
+    </header>
 
     <main>
       <!--hero-->
@@ -180,12 +231,22 @@
           <h2 class="team-h2">Наша команда</h2>
           <ul class="team-ul">
             <li class="team-item">
-              <img
+              <picture>
+                <source srcset="./images/teamcard1-min.jpg 1x, ./images/teamcard1-2x-min.jpg 2x" 
+                        media="(min-width:1200px)">
+                <source srcset="./images/teamcard1-tab-1x-min.jpg 1x, ./images/teamcard1-tab-2x-min.jpg 2x" 
+                        media="(min-width:768px)">
+                <source srcset="./images/teamcard1-mob-1x-min.jpg 1x, ./images/teamcard1-mob-2x-min.jpg 2x" 
+                        media="(min-width:480px)">
+                
+                <img
                 class="team-img"
                 src="./images/teamcard1.jpg"
                 alt="команда1"
                 
               />
+              </picture>
+              
               <div class="team-h3-p">
                 <h3 class="team-name">Ігор Дем'яненко</h3>
                 <p class="team-position">Product Designer</p>
@@ -222,58 +283,24 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                src="./images/teamcard2.jpg"
-                alt="команда2"
-                width="100%"
-                height="auto"
-              />
-              <div class="team-h3-p">
-                <h3 class="team-name">Ігор Дем'яненко</h3>
-                <p class="team-position">Product Designer</p>
-                <ul class="soc-team-ul">
-                  <li class="soc-team-li">
-                    <a class="soc-team-link" href="">
-                      <svg class="soc-svg" width="20" height="20">
-                        <use href="./images/icons.svg#icon-instagram-2"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="soc-team-li">
-                    <a class="soc-team-link" href="">
-                      <svg class="soc-svg" width="20" height="20">
-                        <use href="./images/icons.svg#icon-twitter-1"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="soc-team-li">
-                    <a class="soc-team-link" href="">
-                      <svg class="soc-svg" width="20" height="20">
-                        <use href="./images/icons.svg#icon-facebook-1"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="soc-team-li">
-                    <a class="soc-team-link" href="">
-                      <svg class="soc-svg" width="20" height="20">
-                        <use href="./images/icons.svg#icon-linkedin-1"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="team-item">
-              <img
+              <picture>
+                <source srcset="./images/teamcard2-min.jpg 1x, ./images/teamcard2-2x-min.jpg 2x" 
+                        media="(min-width:1200px)">
+                <source srcset="./images/teamcard2-tab-1x-min.jpg 1x, ./images/teamcard2-tab-2x-min.jpg 2x" 
+                        media="(min-width:768px)">
+                <source srcset="./images/teamcard2-mob-1x-min.jpg 1x, ./images/teamcard2-mob-2x-min.jpg 2x" 
+                        media="(min-width:480px)">
+                
+                <img
                 class="team-img"
-                src="./images/teamcard3.jpg"
-                alt="команда3"
-                width="100%"
-                height="auto"
+                src="./images/teamcard1.jpg"
+                alt="команда1"
+                
               />
+              </picture>
               <div class="team-h3-p">
-                <h3 class="team-name">Ігор Дем'яненко</h3>
-                <p class="team-position">Product Designer</p>
+                <h3 class="team-name">Ольга Рєпіна</h3>
+                <p class="team-position">Frontend Developer</p>
                 <ul class="soc-team-ul">
                   <li class="soc-team-li">
                     <a class="soc-team-link" href="">
@@ -307,16 +334,75 @@
               </div>
             </li>
             <li class="team-item">
-              <img
+              <picture>
+                <source srcset="./images/teamcard3-min.jpg 1x, ./images/teamcard3-2x-min.jpg 2x" 
+                        media="(min-width:1200px)">
+                <source srcset="./images/teamcard3-tab-1x-min.jpg 1x, ./images/teamcard3-tab-2x-min.jpg 2x" 
+                        media="(min-width:768px)">
+                <source srcset="./images/teamcard3-mob-1x-min.jpg 1x, ./images/teamcard3-mob-2x-min.jpg 2x" 
+                        media="(min-width:480px)">
+                
+                <img
                 class="team-img"
-                src="./images/teamcard4.jpg"
-                alt="команда4"
-                width="100%"
-                height="auto"
+                src="./images/teamcard1.jpg"
+                alt="команда1"
+                
               />
+              </picture>
               <div class="team-h3-p">
-                <h3 class="team-name">Ігор Дем'яненко</h3>
-                <p class="team-position">Product Designer</p>
+                <h3 class="team-name">Микола Тарасов</h3>
+                <p class="team-position">Marketing</p>
+                <ul class="soc-team-ul">
+                  <li class="soc-team-li">
+                    <a class="soc-team-link" href="">
+                      <svg class="soc-svg" width="20" height="20">
+                        <use href="./images/icons.svg#icon-instagram-2"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-team-li">
+                    <a class="soc-team-link" href="">
+                      <svg class="soc-svg" width="20" height="20">
+                        <use href="./images/icons.svg#icon-twitter-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-team-li">
+                    <a class="soc-team-link" href="">
+                      <svg class="soc-svg" width="20" height="20">
+                        <use href="./images/icons.svg#icon-facebook-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-team-li">
+                    <a class="soc-team-link" href="">
+                      <svg class="soc-svg" width="20" height="20">
+                        <use href="./images/icons.svg#icon-linkedin-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team-item">
+              <picture>
+                <source srcset="./images/teamcard4-min.jpg 1x, ./images/teamcard4-2x-min.jpg 2x" 
+                        media="(min-width:1200px)">
+                <source srcset="./images/teamcard4-tab-1x-min.jpg 1x, ./images/teamcard4-tab-2x-min.jpg 2x" 
+                        media="(min-width:768px)">
+                <source srcset="./images/teamcard4-mob-1x-min.jpg 1x, ./images/teamcard4-mob-2x-min.jpg 2x" 
+                        media="(min-width:480px)">
+                
+                <img
+                class="team-img"
+                src="./images/teamcard1.jpg"
+                alt="команда1"
+                
+              />
+              </picture>
+              <div class="team-h3-p">
+                <h3 class="team-name">Михайло Єрмаков</h3>
+                <p class="team-position">UI Designer</p>
                 <ul class="soc-team-ul">
                   <li class="soc-team-li">
                     <a class="soc-team-link" href="">
@@ -502,12 +588,14 @@
               id="subscribe-email"
             />
           </div>
-          <div class="subscribe-button-center">
+          <div class="subscribe-button-media">
+           <div class="subscribe-button-center">
             <button type="submit" class="subscribe-button">
               Підписатися<svg class="subscribe-svg-close" width="24" height="24">
                 <use href="./images/icons.svg#icon-paperplane"></use>
               </svg>
             </button>
+           </div>
           </div>
         </div>
       </div>
@@ -603,5 +691,6 @@
       </div>
     </div>
     <script src="./js/madal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

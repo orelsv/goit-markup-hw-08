@@ -5,18 +5,74 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/Img_hero.jpg);
+      url(../images/Header_img_mob.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    @media (min-device-pixel-ratio: 2),
+     (min-resolution: 192dpi),
+     (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/Header_img_mob2x.jpg);
+      }
+
+    @media screen and (min-width:480px) {  
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/Header_img_tab.jpg);
+      @media (min-device-pixel-ratio: 2),
+     (min-resolution: 192dpi),
+     (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/Header_img_tab2x.jpg);
+      }
+      
+    }
+    @media screen and (min-width:768px) {  
+      padding-top: 200px;
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/Img_hero.jpg);
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+       background-image: linear-gradient(
+         rgba(47, 48, 58, 0.4),
+         rgba(47, 48, 58, 0.4)
+       ),
+       url(../images/Img_hero2x.jpg);
+       }
+    }
   }
   .hero__hero-h1 {
     margin-bottom: 30px;
     font-weight: 900;
-    font-size: 26px;
+    font-size: 19px;
     line-height: 1.615;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white);
+    @media screen and (min-width:480px) {  
+      max-width: 100%;
+      font-size: 26px;
+      line-height: 1.615;
+    }
+    @media screen and (min-width:1200px) {  
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
   
   .hero__hero-btn {
@@ -39,5 +95,9 @@
     background: var(--blue);
     border: none;
     cursor: pointer;
+    @media screen and (min-width:1200px) {  
+      padding-left: 32px;
+      padding-right: 32px;
+    }
   }
   

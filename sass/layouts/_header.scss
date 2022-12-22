@@ -15,11 +15,20 @@
   }
   
   .header {
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     outline: 1px solid #ececec; 
     position: relative;
+    @media screen and (min-width:768px) {
+      padding-top: 21px;
+      padding-bottom: 21px;
+    }
+    @media screen and (min-width:1200px) {
+      padding-top: 24px;
+      padding-bottom: 25px;
+    }
   }
+
   .header__header-f {
     display: flex;
     align-items: center;
@@ -47,6 +56,11 @@
   .nav-ul__nav {
     display: flex;
     margin-left: 68px;
+    @media screen and (max-width:768px) {  
+      display: none;
+      margin-right: 90px;
+    }
+    
   }
   
   .nav-ul__nav-li {
@@ -74,6 +88,7 @@
   
   .nav-ul {
     margin-right: auto;
+   
   }
   
   .current::after {
@@ -90,8 +105,8 @@
   .header__header-email {
     display: block;
     display: flex;
-    margin-right: 50px;
-    margin-left: 10px;
+    /*margin-right: 50px;
+    margin-left: 10px;*/
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
@@ -103,12 +118,13 @@
     &:focus {
      color: #2196f3;
     }
+    padding-bottom: 7px;
   }
   
   .header__header-tel {
     display: block;
     display: flex;
-    margin-left: 10px;
+    
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
@@ -120,12 +136,26 @@
     &:focus {
       color: #2196f3;
     }
+    @media screen and (min-width:1200px) {  
+     
+      margin-left: 10px;
+      
+    }
   }
   
   .header__header-cont-div {
-    display: block;
+    margin-right: auto;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    @media screen and (min-width:768px) {  
+     
+      justify-content: flex-start;
+    }
+    
+    @media screen and (max-width:768px) {  
+      display: none;
+     
+    }
   }
   
   .header__soc-svg-header {
@@ -148,10 +178,122 @@
     fill: #afb1b8;
     justify-items: baseline;
   }
+
+  .menu-open-div{
+    display: flex;
+   
+  }
   
+  .menu-open{
+    align-items: flex-end;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    @media screen and (min-width:768px) {
+     display: none;
+    }
+    
+  }
   
+  .mob-menu{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 48px;
+    > .container{
+      
+      height: 100%;
+      display: flex;
+      flex-direction: column;  
+      justify-content: space-between;
+      overflow: auto;
+    }
+    
+  }
   
+  .menu-close{
   
+    display: block;
+    margin-left: auto;
+    margin-top: 10px;
+    background-color: transparent;
+   
+    border: none;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      fill: #2196f3;
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    @media screen and (min-width:768px) {
+     display: none;
+    }
+  }
+  .menu-mob-ul{
+    
+
+  }
+  .menu-mob-li {
+    margin-top: 10px;
+    margin-bottom: 32px;
+
+    
+  }
+  .menu-mob-current {
+  }
+  .menu-mob-item {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #212121;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      color: #2196f3;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+  }
+  .menu-mob-contact {
+    margin-bottom: 32px;
+  }
+  .menu-mob-email {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color: #757575;
+    text-decoration: none;
+  }
+  .menu-mob-tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+    text-decoration: none;
+    
+  }
+  .menu-mob-soc {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+    text-decoration: none;
+    display: flex;
+    margin-top: 64px;
+
+  }
  
-  
+  .mob-palka{
+    color: rgba(33, 33, 33, 0.2);
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 

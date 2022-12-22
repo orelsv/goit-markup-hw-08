@@ -17,6 +17,12 @@
   }
   .footer-pad {
     text-align: center;
+    width: 100%;
+    @media screen and (min-width:768px) {  
+    width: fit-content;
+  
+    }
+
     
   }
   .footer-ul {
@@ -80,12 +86,27 @@
   
  
   .footer-flex {
-   align-items: center;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   @media screen and (min-width:768px) {  
+    justify-content: space-around;
+  
+    }
+   
+   
 
   }
   .attach {
     
     padding-top: 51px;
+    @media screen and (min-width:768px) {  
+      padding-top: 5px;
+      }
+      @media screen and (min-width:768px) {  
+        padding-left: 70px;
+        }
+  
     
   }
   .attach-p {
@@ -98,6 +119,10 @@
     color: #ffffff;
     margin-bottom: 20px;
     text-align: center;
+    @media screen and (min-width:1200px) {  
+      text-align: left;
+    
+      }
   }
   .attach-ul {
     display: flex;
@@ -133,10 +158,15 @@
   
   .subscribe{
     /*margin-left: 93px;*/
+  
     padding-top: 60px;
-  
-  
-  
+    @media screen and (min-width:1200px) {  
+      padding-top: 1px;
+    
+      }
+      @media screen and (min-width:768px) {  
+        padding-left: 93px;
+        }
   }
   
   .subscribe-input {
@@ -148,11 +178,15 @@
     background-color: transparent;
     outline: transparent;
     padding-left: 16px;
-  
+ 
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    @media screen and (min-width:1200px) {  
+      width: 348px;
+    
+      }
     
    
   }
@@ -182,6 +216,7 @@
     &:focus{
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
     }
+   
   }
   .subscribe-button-center{
     display: flex;
@@ -191,4 +226,19 @@
   
   .subscribe-svg-close{
     margin-left: 10px;
+  }
+
+  .subscribe-button-media{
+    width: 100%;
+    @media screen and (min-width:1200px) {  
+      width: fit-content;
+    
+      }
+      @media screen and (min-width:1200px) {  
+        padding-top: 17px;
+      
+        }
+        @media screen and (min-width:768px) {  
+          padding-left: 12px;
+          }
   }

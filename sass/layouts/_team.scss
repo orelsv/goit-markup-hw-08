@@ -2,14 +2,21 @@
     background: var(--background-team);
     padding-top: 60px;
     padding-bottom: 60px;
+    @media screen and (min-width:1200px) {  
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
   }
   .team-h2 {
     margin-bottom: 50px;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--dark-grey);
+    @media screen and (min-width:1200px) {  
+      font-size: 36px;
+    }
   }
   .team-ul {
     display: flex;
@@ -25,7 +32,10 @@
 
     width: 100%;
       @media screen and (min-width:768px) {  
-        width: calc((100%-30px) / 2);
+        width: calc((100% - 30px) / 2);
+      }
+      @media screen and (min-width:1200px) {  
+        width: calc((100% - 90px) / 4);
       }
   }
   .team-img {

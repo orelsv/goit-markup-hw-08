@@ -1,6 +1,10 @@
 .about {
   padding-top: 60px;
   padding-bottom: 60px;
+  @media screen and (min-width:1200px) {  
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   
 }
 .about__about-list {
@@ -8,15 +12,16 @@
   flex-wrap: wrap;
   gap: 30px;
   width: 100%;
-  @media screen and (min-width:768px) {  
-  width: calc((100%-30px) / 2);
-}
+ 
   
 }
 .about__about-list-li {
   width: 100%;
   @media screen and (min-width:768px) {  
-    width: calc((100%-30px) / 2);
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width:1200px) {  
+    width: calc((100% - 90px) / 4);
   }
   
 }
@@ -30,9 +35,7 @@
   color: var(--dark-grey);
   text-align: center;
   width: 100%;
-  @media screen and (min-width:768px) {  
-    width: calc((100%-30px) / 2);
-  }
+  
 }
 .about__about-p {
   font-size: 14px;
@@ -50,9 +53,7 @@
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
-  @media screen and (min-width:768px) {  
-    width: calc((100%-30px) / 2);
-  }
+  
 }
 
 .about__about-icon {
